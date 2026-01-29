@@ -1,0 +1,81 @@
+/*全体*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/*ヘッダー*/
+.app-header {
+  background-color: #2c7be5;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+/*削除ボタン*/
+#deleteMemo {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #2c7be5;;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#deleteMemo:hover {
+  background-color: #2c7be5;;
+}
+
+/*メモ表示*/
+.memo-title {
+  margin: 10px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ▶ / ▼ */
+.memo-title::before {
+  content: "▶ ";
+}
+
+.memo-title.open::before {
+  content: "▼ ";
+}
+
+/* 本文 */
+.memo-content {
+  display: none;
+  margin: 0 20px 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-left: 4px solid #6f42c1;
+}
+
+.memo-content.open {
+  display: block;
+}
+
+/*フッター*/
+.app-footer {
+  background-color: #e9ecef;
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  color: #666;
+}

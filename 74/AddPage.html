@@ -5,20 +5,22 @@
     <title>就活記録</title>
     <link rel="stylesheet" href="css/style.css" />
     <!--javascriptファイルの読み込み-->
-    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/addScript.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <header class="app-header">
-      <h1>就活記録アプリ</h1>
-      <h2 id="cnt">記録件数</h2><!--何件のメモがあるかを表示-->
+      <h1>記録追加ページ</h1>
     </header>
     <div>
-        <button id="addRecord" value="1">記録を追加する</button>
+      <h2>タイトル</h2>
+      <textarea id="subject" placeholder="件名を入力"></textarea>
+      <h2>内容</h2>
+      <textarea id="content" placeholder="内容を入力"></textarea>
     </div>
     <div>
-        <button id="viewRecord" value="2">記録を閲覧・削除する</button>
+      <button id="addMemo">メモを追加</button>
     </div>
-    
+
     <footer class="app-footer">
       <p>&copy; メッセージアプリ</p>
     </footer>
